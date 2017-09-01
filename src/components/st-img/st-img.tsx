@@ -2,10 +2,10 @@ import { Component, Element, Prop, State } from '@stencil/core';
 
 
 @Component({
-  tag: 'lazy-img',
-  styleUrl: 'lazy-img.scss'
+  tag: 'st-img',
+  styleUrl: 'st-img.scss'
 })
-export class LazyImg {
+export class StImg {
 
   @Element() el: HTMLElement;
   

@@ -1,7 +1,7 @@
 exports.config = {
   generateCollection: true,
   bundles: [
-    { components: ['lazy-img'] }
+    { components: ['st-img'] }
   ]
 };
 

@@ -1,0 +1,43 @@
+{
+  "components": [
+    {
+      "tag": "lazy-img",
+      "componentClass": "LazyImg",
+      "componentPath": "components/lazy-img/lazy-img.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/lazy-img/lazy-img.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "alt"
+        },
+        {
+          "name": "src"
+        }
+      ],
+      "states": [
+        {
+          "name": "oldSrc"
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      }
+    }
+  ],
+  "bundles": [
+    {
+      "components": [
+        "lazy-img"
+      ]
+    }
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.0.5-10"
+  }
+}
