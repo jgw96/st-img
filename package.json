@@ -24,12 +24,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ionic-team/stencil-starter.git"
+    "url": "git+https://github.com/jgw96/lazy-img.git"
   },
   "author": "Justin Willis",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ionic-team/stencil"
+    "url": "https://github.com/jgw96/lazy-img"
   },
-  "homepage": "https://github.com/ionic-team/stencil"
+  "homepage": "https://github.com/jgw96/lazy-img"
 }
