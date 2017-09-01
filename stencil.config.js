@@ -1,9 +1,7 @@
 exports.config = {
+  generateCollection: true,
   bundles: [
-    { components: ['my-name'] }
-  ],
-  collections: [
-    { name: '@stencil/router' }
+    { components: ['lazy-img'] }
   ]
 };
 

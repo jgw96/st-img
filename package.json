@@ -1,8 +1,11 @@
 {
-  "name": "@stencil/starter",
+  "name": "lazy-img",
   "private": true,
   "version": "0.0.1",
-  "description": "Stencil Starter App",
+  "description": "Web Component built with Stencil to lazy load images",
+  "main": "dist/collection/index.js",
+  "types": "dist/collection/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
   "files": [
     "dist"
   ],
@@ -13,8 +16,7 @@
     "start": "npm run dev"
   },
   "dependencies": {
-    "@stencil/core": "next",
-    "@stencil/router": "0.0.4"
+    "@stencil/core": "next"
   },
   "devDependencies": {
     "@stencil/dev-server": "latest",
@@ -24,7 +26,7 @@
     "type": "git",
     "url": "git+https://github.com/ionic-team/stencil-starter.git"
   },
-  "author": "Ionic Team",
+  "author": "Justin Willis",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ionic-team/stencil"
