@@ -1,4 +1,4 @@
-export declare class LazyImg {
+export declare class StImg {
     el: HTMLElement;
     src: string;
     alt: string;

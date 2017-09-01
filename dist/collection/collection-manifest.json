@@ -1,13 +1,13 @@
 {
   "components": [
     {
-      "tag": "lazy-img",
-      "componentClass": "LazyImg",
-      "componentPath": "components/lazy-img/lazy-img.js",
+      "tag": "st-img",
+      "componentClass": "StImg",
+      "componentPath": "components/st-img/st-img.js",
       "styles": {
         "$": {
           "stylePaths": [
-            "components/lazy-img/lazy-img.scss"
+            "components/st-img/st-img.scss"
           ]
         }
       },
@@ -32,7 +32,7 @@
   "bundles": [
     {
       "components": [
-        "lazy-img"
+        "st-img"
       ]
     }
   ],
