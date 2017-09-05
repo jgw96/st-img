@@ -1,0 +1,25 @@
+{
+  "namespace": "App",
+  "components": [
+    [
+      "ST-IMG",
+      "st-img",
+      {
+        "$": "st-img"
+      },
+      [
+        [
+          "alt",
+          1
+        ],
+        [
+          "src",
+          1
+        ]
+      ]
+    ]
+  ],
+  "loader": "app.js",
+  "core": "app/app.core.js",
+  "corePolyfilled": "app/app.core.pf.js"
+}

@@ -1,7 +1,15 @@
+/*! Built with http://stenciljs.com */
+App.loadComponents(
+
+/**** module id (dev mode) ****/
+"st-img",
+
+/**** component modules ****/
+function importComponent(exports, h, t, Context, publicPath) {
 var StImg = /** @class */ (function () {
     function StImg() {
     }
-    StImg.prototype.componentDidLoad = function () {
+    StImg.prototype.componentWillLoad = function () {
         this.addIntersectionObserver();
     };
     StImg.prototype["componentWillUpdate"] = function () {
@@ -46,4 +54,26 @@ var StImg = /** @class */ (function () {
     };
     return StImg;
 }());
-export { StImg };
+
+exports['ST-IMG'] = StImg;
+},
+
+
+/***************** st-img *****************/
+[
+/** st-img: tag **/
+"ST-IMG",
+
+/** st-img: members **/
+[
+  [ "alt", /** prop **/ 1 ],
+  [ "el", /** element ref **/ 7 ],
+  [ "oldSrc", /** state **/ 5 ],
+  [ "src", /** prop **/ 1 ]
+],
+
+/** st-img: host **/
+{}
+
+]
+)

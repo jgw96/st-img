@@ -16,7 +16,7 @@ export class StImg {
 
   io: IntersectionObserver;
 
-  componentWillLoad() {
+  componentDidLoad() {
     this.addIntersectionObserver();
   }
 

@@ -4,7 +4,7 @@ export declare class StImg {
     alt: string;
     oldSrc: string;
     io: IntersectionObserver;
-    componentWillLoad(): void;
+    componentDidLoad(): void;
     ionViewWillUpdate(): void;
     handleImage(): void;
     addIntersectionObserver(): void;
