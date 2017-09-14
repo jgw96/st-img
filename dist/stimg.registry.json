@@ -1,11 +1,11 @@
 {
-  "namespace": "App",
+  "namespace": "stimg",
   "components": [
     [
       "ST-IMG",
-      "st-img",
+      "xuzklrfv",
       {
-        "$": "st-img"
+        "$": "4iwl584z"
       },
       [
         [
@@ -19,7 +19,7 @@
       ]
     ]
   ],
-  "loader": "app.js",
-  "core": "app/app.core.js",
-  "corePolyfilled": "app/app.core.pf.js"
+  "loader": "stimg.js",
+  "core": "stimg/stimg.kklqjkn7.js",
+  "corePolyfilled": "stimg/stimg.dgemtq2b.pf.js"
 }

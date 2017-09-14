@@ -1,5 +1,7 @@
 exports.config = {
-  generateCollection: true,
+  namespace: 'stimg',
+  generateDistribution: true,
+  generateWWW: false,
   bundles: [
     { components: ['st-img'] }
   ]
