@@ -20,7 +20,7 @@ export class StImg {
     this.addIntersectionObserver();
   }
 
-  ionViewWillUpdate() {
+  componentWillUpdate() {
     if (this.oldSrc && this.src !== this.oldSrc) {
       this.addIntersectionObserver();
     }
