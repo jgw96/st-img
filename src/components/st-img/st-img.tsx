@@ -36,7 +36,10 @@ export class StImg {
   }
 
   addIntersectionObserver() {
-    if ('IntersectionObserver' in window && this.src !== null) {
+    if (!this.src) {
+      return; 
+    }
+    if ('IntersectionObserver' in window) {
       this.io = new IntersectionObserver((data: any) => {
         if (data[0].isIntersecting) {
           this.handleImage();
