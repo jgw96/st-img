@@ -1,4 +1,8 @@
 
-lazy-img {
+st-img {
   display: block;
+
+  img {
+    max-width: 100%
+  }
 }

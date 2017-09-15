@@ -1,6 +1,6 @@
 {
   "name": "st-img",
-  "version": "0.0.6",
+  "version": "0.1.1",
   "description": "Web Component built with Stencil to lazy load images",
   "main": "dist/collection/index.js",
   "types": "dist/collection/index.d.ts",
