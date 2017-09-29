@@ -21,7 +21,7 @@ export class StImg {
   }
 
   componentWillUpdate() {
-    if (this.oldSrc && this.src !== this.oldSrc) {
+    if (this.src !== this.oldSrc) {
       this.addIntersectionObserver();
     }
     this.oldSrc = this.src;
@@ -41,6 +41,9 @@ export class StImg {
     }
     if ('IntersectionObserver' in window) {
       this.io = new IntersectionObserver((data: any) => {
+        // because there will only ever be one instance
+        // of the element we are observing
+        // we can just use data[0]
         if (data[0].isIntersecting) {
           this.handleImage();
           this.removeIntersectionObserver();
