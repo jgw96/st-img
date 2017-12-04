@@ -2,24 +2,38 @@
   "namespace": "stimg",
   "components": [
     [
-      "ST-IMG",
-      "xuzklrfv",
-      {
-        "$": "krdrfdg4"
-      },
+      "st-img",
+      [
+        "d3oogznk",
+        "i5s2khxs"
+      ],
+      1,
       [
         [
           "alt",
-          1
+          1,
+          1,
+          2
+        ],
+        [
+          "el",
+          7
+        ],
+        [
+          "oldSrc",
+          5
         ],
         [
           "src",
-          1
+          1,
+          1,
+          2
         ]
-      ]
+      ],
+      1
     ]
   ],
-  "loader": "stimg.js",
-  "core": "stimg/stimg.kklqjkn7.js",
-  "corePolyfilled": "stimg/stimg.dgemtq2b.pf.js"
+  "core": "stimg.tgzphr5i.js",
+  "coreSsr": "stimg.mxxrgbtb.js",
+  "corePolyfilled": "stimg.t0nzcnvf.js"
 }

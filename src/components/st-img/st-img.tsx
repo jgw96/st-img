@@ -3,7 +3,8 @@ import { Component, Element, Prop, State } from '@stencil/core';
 
 @Component({
   tag: 'st-img',
-  styleUrl: 'st-img.scss'
+  styleUrl: 'st-img.scss',
+  shadow: true
 })
 export class StImg {
 
@@ -28,7 +29,7 @@ export class StImg {
   }
 
   handleImage() {
-    const image: HTMLImageElement = this.el.querySelector('img');
+    const image: HTMLImageElement = this.el.shadowRoot.querySelector('img');
     image.setAttribute('src', image.getAttribute('data-src'));
     image.onload = () => {
       image.removeAttribute('data-src');
@@ -50,7 +51,7 @@ export class StImg {
         }
       })
 
-      this.io.observe(this.el.querySelector('img'));
+      this.io.observe(this.el.shadowRoot.querySelector('img'));
     } else {
       // fall back to setTimeout for Safari and IE
       setTimeout(() => {

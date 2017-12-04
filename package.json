@@ -1,6 +1,6 @@
 {
   "name": "st-img",
-  "version": "0.1.1",
+  "version": "0.3.0",
   "description": "Web Component built with Stencil to lazy load images",
   "main": "dist/collection/index.js",
   "types": "dist/collection/index.d.ts",
@@ -16,7 +16,7 @@
     "start": "npm run dev"
   },
   "dependencies": {
-    "@stencil/core": "0.0.5-18"
+    "@stencil/core": "0.0.8-9"
   },
   "devDependencies": {
     "@stencil/dev-server": "latest",

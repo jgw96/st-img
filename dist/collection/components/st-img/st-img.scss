@@ -1,8 +1,9 @@
 
-st-img {
+:host {
   display: block;
+}
 
-  img {
-    max-width: 100%
-  }
+
+img {
+  max-width: 100%
 }

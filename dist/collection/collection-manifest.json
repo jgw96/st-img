@@ -13,10 +13,12 @@
       },
       "props": [
         {
-          "name": "alt"
+          "name": "alt",
+          "type": "string"
         },
         {
-          "name": "src"
+          "name": "src",
+          "type": "string"
         }
       ],
       "states": [
@@ -26,7 +28,8 @@
       ],
       "hostElement": {
         "name": "el"
-      }
+      },
+      "shadow": true
     }
   ],
   "bundles": [
@@ -38,6 +41,7 @@
   ],
   "compiler": {
     "name": "@stencil/core",
-    "version": "0.0.5-18"
+    "version": "0.0.8-9",
+    "typescriptVersion": "2.6.2"
   }
 }
