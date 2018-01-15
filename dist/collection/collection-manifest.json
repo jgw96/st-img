@@ -14,16 +14,23 @@
       "props": [
         {
           "name": "alt",
-          "type": "string"
+          "type": "String"
+        },
+        {
+          "name": "fit",
+          "type": "Boolean"
         },
         {
           "name": "src",
-          "type": "string"
+          "type": "String",
+          "watch": [
+            "srcChanged"
+          ]
         }
       ],
       "states": [
         {
-          "name": "oldSrc"
+          "name": "loadSrc"
         }
       ],
       "hostElement": {
@@ -41,7 +48,7 @@
   ],
   "compiler": {
     "name": "@stencil/core",
-    "version": "0.0.8-9",
+    "version": "0.1.4",
     "typescriptVersion": "2.6.2"
   }
 }

@@ -2,8 +2,8 @@
   "name": "st-img",
   "version": "0.3.0",
   "description": "Web Component built with Stencil to lazy load images",
-  "main": "dist/collection/index.js",
-  "types": "dist/collection/index.d.ts",
+  "main": "dist/stimg.js",
+  "types": "dist/types/components.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "files": [
     "dist/"
@@ -16,7 +16,7 @@
     "start": "npm run dev"
   },
   "dependencies": {
-    "@stencil/core": "0.0.8-9"
+    "@stencil/core": "latest"
   },
   "devDependencies": {
     "@stencil/dev-server": "latest",

@@ -1,4 +1,4 @@
-import { Component, Element, Prop, State } from '@stencil/core';
+import { Component, Element, Prop, Watch, State } from '@stencil/core';
 
 
 @Component({
@@ -8,59 +8,48 @@ import { Component, Element, Prop, State } from '@stencil/core';
 })
 export class StImg {
 
+  private io: IntersectionObserver;
+
   @Element() el: HTMLElement;
-  
-  @Prop() src: string;
+
+  @State() loadSrc: string;
+
+  @Prop() fit = false;
   @Prop() alt: string;
-
-  @State() oldSrc: string;
-
-  io: IntersectionObserver;
+  @Prop() src: string;
+  @Watch('src')
+  srcChanged() {
+    this.addIntersectionObserver();
+  }
 
   componentDidLoad() {
     this.addIntersectionObserver();
   }
 
-  componentWillUpdate() {
-    if (this.src !== this.oldSrc) {
-      this.addIntersectionObserver();
-    }
-    this.oldSrc = this.src;
-  }
-
-  handleImage() {
-    const image: HTMLImageElement = this.el.shadowRoot.querySelector('img');
-    image.setAttribute('src', image.getAttribute('data-src'));
-    image.onload = () => {
-      image.removeAttribute('data-src');
-    };
-  }
-
-  addIntersectionObserver() {
+  private addIntersectionObserver() {
     if (!this.src) {
-      return; 
+      return;
     }
     if ('IntersectionObserver' in window) {
-      this.io = new IntersectionObserver((data: any) => {
+      this.removeIntersectionObserver();
+      this.io = new IntersectionObserver((data) => {
         // because there will only ever be one instance
         // of the element we are observing
         // we can just use data[0]
         if (data[0].isIntersecting) {
-          this.handleImage();
+          this.loadSrc = this.src;
           this.removeIntersectionObserver();
         }
       })
 
-      this.io.observe(this.el.shadowRoot.querySelector('img'));
+      this.io.observe(this.el);
     } else {
       // fall back to setTimeout for Safari and IE
-      setTimeout(() => {
-        this.handleImage();
-      }, 300);
+      setTimeout(() => this.loadSrc = this.src, 300);
     }
   }
 
-  removeIntersectionObserver() {
+  private removeIntersectionObserver() {
     if (this.io) {
       this.io.disconnect();
       this.io = null;
@@ -68,8 +57,13 @@ export class StImg {
   }
 
   render() {
+    const Img = 'img' as any;
     return (
-      <img data-src={this.src} alt={this.alt}></img>
+      <Img
+        class={{fit: this.fit}}
+        src={this.loadSrc}
+        alt={this.alt}
+        decoding="async"></Img>
     );
   }
 }
