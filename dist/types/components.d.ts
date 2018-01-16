@@ -29,8 +29,9 @@ declare global {
   }
   namespace JSXElements {
     export interface StImgAttributes extends HTMLAttributes {
-      src?: string;
       alt?: string;
+      fit?: boolean;
+      src?: string;
     }
   }
 }
