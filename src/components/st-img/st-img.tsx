@@ -3,8 +3,7 @@ import { Component, Element, Prop, State } from '@stencil/core';
 
 @Component({
   tag: 'st-img',
-  styleUrl: 'st-img.scss',
-  shadow: true
+  styleUrl: 'st-img.scss'
 })
 export class StImg {
 
