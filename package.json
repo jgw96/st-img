@@ -12,7 +12,6 @@
   "scripts": {
     "build": "stencil build",
     "dev": "stencil build --dev --watch --serve",
-    "serve": "stencil-dev-server",
     "start": "npm run dev"
   },
   "dependencies": {
