@@ -1,0 +1,1 @@
+// stimg: CommonJS Main

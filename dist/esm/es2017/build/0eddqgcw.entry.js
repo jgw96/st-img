@@ -1,4 +1,6 @@
-export class StImg {
+import { h } from '../stimg.core.js';
+
+class StImg {
     componentDidLoad() {
         this.addIntersectionObserver();
     }
@@ -61,5 +63,7 @@ export class StImg {
             "attr": "src"
         }
     }; }
-    static get style() { return "/**style-placeholder:st-img:**/"; }
+    static get style() { return ":host{display:block}img{max-width:100%}"; }
 }
+
+export { StImg };

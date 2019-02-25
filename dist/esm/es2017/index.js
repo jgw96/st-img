@@ -1,0 +1,1 @@
+// stimg: ES Module

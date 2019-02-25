@@ -2,6 +2,7 @@
   "components": [
     {
       "tag": "st-img",
+      "dependencies": [],
       "componentClass": "StImg",
       "componentPath": "components/st-img/st-img.js",
       "styles": {
@@ -14,11 +15,13 @@
       "props": [
         {
           "name": "alt",
-          "type": "string"
+          "type": "String",
+          "attr": "alt"
         },
         {
           "name": "src",
-          "type": "string"
+          "type": "String",
+          "attr": "src"
         }
       ],
       "states": [
@@ -32,16 +35,17 @@
       "shadow": true
     }
   ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.18.0",
+    "typescriptVersion": "3.3.3"
+  },
   "bundles": [
     {
       "components": [
         "st-img"
       ]
     }
-  ],
-  "compiler": {
-    "name": "@stencil/core",
-    "version": "0.0.8-9",
-    "typescriptVersion": "2.6.2"
-  }
+  ]
 }

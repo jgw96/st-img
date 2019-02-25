@@ -1,0 +1,20 @@
+{
+  "tags": [
+    {
+      "label": "st-img",
+      "description": "",
+      "attributes": [
+        {
+          "label": "alt",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "src",
+          "description": "",
+          "required": false
+        }
+      ]
+    }
+  ]
+}
